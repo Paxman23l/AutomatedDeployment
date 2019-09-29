@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+  metadata:
+  name: client-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: client #use as reference for creating connections
+      image: #specify image 
+      ports: 
+        - containerPort: 3000 #port container is exposed to the rest of the internal network with
+
